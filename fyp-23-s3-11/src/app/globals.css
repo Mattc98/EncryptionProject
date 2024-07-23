@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li.logo {
+  flex: 1;
+}
+
+li.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+li.auth-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-link {
+  margin-right: 10px;
+}
+
+.sign-in-button {
+  margin-left: 10px;
+}
+
+img {
+  margin: 10px
+}
