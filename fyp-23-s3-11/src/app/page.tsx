@@ -46,7 +46,7 @@ const Home = () => {
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 ' : 'bg-gray-100 text-gray-900'} flex flex-col items-center p-6`}>
-      <header className={`w-full ${isDarkMode ? 'bg-gray-800' : 'bg-blue-600'} text-white py-4 px-6 flex justify-between items-center`}>
+      <header className={`w-full ${isDarkMode ? 'bg-gray-800' : 'bg-gray-800'} shadow-md rounded-lg p-6 mb-8 text-white py-4 px-6 flex justify-between items-center`}>
         <h1 className='text-3xl font-bold'>Room Booking System</h1>
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}

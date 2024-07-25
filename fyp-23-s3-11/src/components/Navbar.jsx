@@ -18,17 +18,17 @@ function AuthButton() {
   if (session) {
     return (
       <div className='flex items-center space-x-4'>
-        <Link href={`/${session.user.name}`} className='text-blue-500 hover:underline'>
+        <Link href={`/${session.user.name}`} className='text-teal-500 hover:underline'>
           {session.user.name}
         </Link>
-        <button className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600' onClick={handleSignOut}>
+        <button className='bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-700' onClick={handleSignOut}>
           Sign out
         </button>
       </div>
     );
   }
   return (
-    <button className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600' onClick={() => signIn()}>
+    <button className='bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-700' onClick={() => signIn()}>
       Sign in
     </button>
   );
